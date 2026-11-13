@@ -271,40 +271,6 @@ kaggle kernels output <username>/<kernel-name> -p ./output
 
 ---
 
-# Result Interpretation
-
-Model performance must be evaluated using aggregate statistics.
-
-Report:
-- mean
-- standard deviation
-- minimum
-- maximum
-
-Do not compare models using only a single run.
-
-Recommended reporting format:
-
-```text
-F1 = 0.842 +/- 0.031
-```
-
-For threshold comparison, use:
-
-```text
-*_before_after_threshold_comparison.csv
-```
-
-Key delta columns:
-- `delta_f1_evt_minus_default`
-- `delta_fpr_evt_minus_default`
-
-Interpretation:
-- positive `delta_f1_evt_minus_default` means EVT improved mean F1.
-- negative `delta_fpr_evt_minus_default` means EVT reduced mean false positives.
-
----
-
 # Repository Structure
 
 ```text
